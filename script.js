@@ -9,10 +9,12 @@ function handleSocialsClick(e) {
 
     if(visible) {
         socialsPopover.setAttribute('data-visible', false);
+        socialsPopover.setAttribute('aria-hidden', true);
         socialsButton.setAttribute('aria-expanded', false);
     }
     else {
         socialsPopover.setAttribute('data-visible', true);
+        socialsPopover.setAttribute('aria-hidden', false);
         socialsButton.setAttribute('aria-expanded', true);
     }
 }
